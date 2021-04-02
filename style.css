@@ -4371,7 +4371,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	-----------------------------------------------------------------*/
 
 	.side-header:not(.open-header) #wrapper {
-		margin: 0 0 0 260px !important;
+		margin: 0 260px 0 0 !important;
 		width: auto !important;
 	}
 
@@ -4383,7 +4383,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	.side-header #header {
 		position: fixed;
 		top: 0;
-		left: 0;
+		right: 0;
 		z-index: 10;
 		width: 260px;
 		height: 100%;

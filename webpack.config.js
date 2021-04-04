@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$|\.ejs$/i,
+        test: /\.html$/i,
         loader: 'html-loader'
       },
       {
@@ -62,8 +62,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         hash: true,
-        title: 'Ferbo & Kappa',
-        template: './src/index.ejs',
+        template: 'src/index.html',
         filename: 'index.html'
     }),
     new webpack.ProvidePlugin({

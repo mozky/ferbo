@@ -12,18 +12,37 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/i,
+        test: /\.html$|\.ejs$/i,
         loader: 'html-loader'
       },
       {
         test: /\.s[ac]ss$|\.css/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader"
+          {
+            // Creates `style` nodes from JS strings
+            loader: 'style-loader'
+          }, {
+            // Translates CSS into CommonJS modules
+            loader: 'css-loader'
+          }, {
+            // Run postcss actions
+            loader: 'postcss-loader',
+            options: {
+              // `postcssOptions` is needed for postcss 8.x;
+              // if you use postcss 7.x skip the key
+              postcssOptions: {
+                // postcss plugins, can be exported to postcss.config.js
+                plugins: function () {
+                  return [
+                    require('autoprefixer')
+                  ];
+                }
+              }
+            }
+          }, {
+            // Compiles Sass to CSS
+            loader: 'sass-loader'
+          }
         ],
       },
       {
@@ -32,7 +51,7 @@ module.exports = {
       },
       {
         test: /\.svg$/i,
-        type: 'asset/inline'
+        type: 'asset/resource'
       },
       {
         test: /\.ttf$|\.woff$|\.eot$/i,

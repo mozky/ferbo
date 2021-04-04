@@ -1,6 +1,6 @@
 {
   "name": "ferbo",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Ferbo & Kappa website",
   "main": "src/app.js",
   "scripts": {
@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/mozky/ferbo#readme",
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "css-loader": "^5.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.4.0",
+    "postcss-loader": "^5.2.0",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
@@ -30,6 +31,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3"
+    "normalize.css": "^8.0.1"
   }
 }

@@ -1,0 +1,122 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 150px;
+  grid-template-areas: 
+    "left-col col1 col2 col3 ferbo mexha"
+    "left-col footer footer footer footer footer"
+}
+
+.left-col {
+  grid-area: left-col;
+  border-right: thin solid gray;
+}
+
+.col1 {
+  border-right: thin solid gray; 
+}
+
+.col2 {
+  border-right: thin solid gray;
+}
+
+.col3 {
+  border-right: thin solid gray;
+}
+
+.ferbo {
+  border-right: thin solid gray;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column nowrap;
+
+  div {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    img {
+      max-width: 90%;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 30px;
+
+    li {
+      margin-top: 2em;
+      text-transform: uppercase;
+      border-bottom: 3px solid white;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom-color: orange;
+      }
+    }
+  }
+
+}
+
+footer {
+  grid-area: footer;
+  border-top: 3px solid white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  #social {
+    width: 60%;
+    align-self: flex-end;
+
+    .icons {
+      padding: 15px
+    }
+  }
+
+  #ferbo-toggle {
+    width: 20%;
+
+    img {
+      max-height: 80%;
+    }
+  }
+
+  #mexha-toggle {
+    width: 20%;
+
+    img {
+      max-width: 70%;
+    }
+  }
+
+  .menu-toggle {
+    width: 130px;
+    height: 130px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

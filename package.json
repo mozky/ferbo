@@ -1,6 +1,6 @@
 {
   "name": "ferbo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ferbo & Kappa website",
   "main": "src/app.js",
   "scripts": {

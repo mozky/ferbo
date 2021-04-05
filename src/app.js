@@ -39,3 +39,13 @@ mexhaButton.addEventListener('click', function() {
     mexhaButton.classList.add('big')
   }
 })
+
+
+
+setTimeout(() => {
+  const col1 = document.getElementById("col1")
+  const col2 = document.getElementById("col2")
+
+  col1.classList.add("visible")
+  col2.classList.add("visible")
+}, 1000)

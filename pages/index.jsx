@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import PinterestIcon from '@components/PinterestIcon'
 import YouTubeIcon from '@components/YouTubeIcon'
@@ -77,12 +76,12 @@ export default function Home() {
           </div>
           <div className="menu-button" >
             <div id="ferbo-toggle">
-              <Image width={60} height={110} src="/images/ferbo-logo.png" />
+              <img width={60} height={110} src="/images/ferbo-logo.png" />
             </div>
           </div>
           <div className="menu-button">
             <div id="mexha-toggle">
-              <Image width={90} height={70}  src="/images/mexha-logo.png" />
+              <img width={90} height={70}  src="/images/mexha-logo.png" />
             </div>
           </div>
         </footer>

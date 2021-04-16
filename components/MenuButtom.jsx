@@ -1,8 +1,6 @@
-const MenuButtom = ({ backStyle, menuName, onClick, width, height, big }) => (
+const MenuButtom = ({ backStyle, menuName, onClick, big }) => (
   <div className="menu-button" style={backStyle && { width: '100%' }} >
-    <div id={`${menuName}-toggle`} className={big ? 'big' : ''} onClick={() => onClick()}>
-      {backStyle ? <p>HOME</p> : <img width={width} height={height} src={`/images/${menuName}-logo.png`} />}
-    </div>
+      {backStyle ? <div onClick={() => onClick()} id="back-button" className={big ? 'big' : ''}>HOME</div> : <img id={`${menuName}-toggle`} className={big ? 'big' : ''} onClick={() => onClick()} src={`/images/${menuName}-circle.png`} />}
   </div>
 )
 

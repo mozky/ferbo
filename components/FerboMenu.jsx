@@ -3,7 +3,7 @@ import MenuLink from '@components/MenuLink'
 const FerboMenu = ({ showMenu }) => (
   <div id="ferbo-menu" className={`menu-wrapper ${showMenu ? 'show' : ''}`}>
     <div className="logo">
-      <img layout='fill' src="/images/ferbo.png" />
+      <img layout='fill' src="/images/ferbo-transparent.png" />
     </div>
     <ul>
       <li>

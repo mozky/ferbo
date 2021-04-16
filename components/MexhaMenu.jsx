@@ -3,7 +3,7 @@ import MenuLink from '@components/MenuLink'
 const MexhaMenu = ({ showMenu }) => (
   <div id="mexha-menu" className={`menu-wrapper ${showMenu ? 'show' : ''}`}>
     <div className="logo">
-      <img layout='fill' src="/images/mexha.png" />
+      <img layout='fill' src="/images/mexha-transparent.png" />
     </div>
     <ul>
       <li>

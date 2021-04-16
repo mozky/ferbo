@@ -325,18 +325,21 @@ main {
     }
   }
 
-  #ferbo-toggle, #mexha-toggle {
+  #back-button {
+    border-radius: 50%;
+    background: $color-black;
+    border: 3px solid $color-white;
+  }
+
+  #ferbo-toggle, #mexha-toggle, #back-button {
     width: 130px;
     height: 130px;
-    background: $color-black;
-    border-radius: 50%;
     margin: auto;
     display: flex;
     cursor: pointer;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    border: 3px solid $color-white;
     transition: transform .2s ease-in-out;
 
     &.big, &:hover {

@@ -38,14 +38,14 @@ const Layout = ({ props, children }) => {
     footer: 
       <>
         <SocialIcons/>
-        <MenuButtom key="ferbo-menu" big={openMenu === 'ferbo'} menuName="ferbo" onClick={() => toggleOpenMenu(openMenu === 'ferbo' ? false : 'ferbo')} width={60} height={110} />
-        <MenuButtom key="mexha-menu" big={openMenu === 'mexha'} menuName="mexha" onClick={() => toggleOpenMenu(openMenu === 'mexha' ? false : 'mexha')} width={90} height={70} />
+        <MenuButtom key="ferbo-menu" big={openMenu === 'ferbo'} menuName="ferbo" onClick={() => toggleOpenMenu(openMenu === 'ferbo' ? false : 'ferbo')} />
+        <MenuButtom key="mexha-menu" big={openMenu === 'mexha'} menuName="mexha" onClick={() => toggleOpenMenu(openMenu === 'mexha' ? false : 'mexha')} />
       </>
   }
 
   const insideLayout = {
     col5: routeSite === 'ferbo' ? <FerboMenu showMenu="true" /> : <MexhaMenu showMenu="true" />,
-    footer: <MenuButtom key={routeSite + "-menu"} big backStyle menuName={routeSite} onClick={() => router.push('/')} width={routeSite === 'ferbo' ? 60 : 90} height={routeSite === 'ferbo' ? 110 : 70} />
+    footer: <MenuButtom key={routeSite + "-menu"} big backStyle menuName={routeSite} onClick={() => router.push('/')} />
   }
 
   const layout = routeSite ? insideLayout : homeLayout

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import SocialIcons from '@components/SocialIcons'
 import FerboMenu from '@components/FerboMenu'
 import MexhaMenu from '@components/MexhaMenu'
-import MenuButtom from '@components/MenuButtom'
+import MenuButton from '@components/MenuButton'
 
 const Layout = ({ props, children }) => {
   const router = useRouter()
@@ -38,14 +38,14 @@ const Layout = ({ props, children }) => {
     footer: 
       <>
         <SocialIcons/>
-        <MenuButtom key="ferbo-menu" big={openMenu === 'ferbo'} menuName="ferbo" onClick={() => toggleOpenMenu(openMenu === 'ferbo' ? false : 'ferbo')} />
-        <MenuButtom key="mexha-menu" big={openMenu === 'mexha'} menuName="mexha" onClick={() => toggleOpenMenu(openMenu === 'mexha' ? false : 'mexha')} />
+        <MenuButton key="ferbo-menu" big={openMenu === 'ferbo'} menuName="ferbo" onClick={() => toggleOpenMenu(openMenu === 'ferbo' ? false : 'ferbo')} />
+        <MenuButton key="mexha-menu" big={openMenu === 'mexha'} menuName="mexha" onClick={() => toggleOpenMenu(openMenu === 'mexha' ? false : 'mexha')} />
       </>
   }
 
   const insideLayout = {
     col5: routeSite === 'ferbo' ? <FerboMenu showMenu="true" /> : <MexhaMenu showMenu="true" />,
-    footer: <MenuButtom key={routeSite + "-menu"} big backStyle menuName={routeSite} onClick={() => router.push('/')} />
+    footer: <MenuButton key={routeSite + "-menu"} big backStyle menuName={routeSite} onClick={() => router.push('/')} />
   }
 
   const layout = routeSite ? insideLayout : homeLayout

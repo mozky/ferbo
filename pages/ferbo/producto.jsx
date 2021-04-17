@@ -1,6 +1,7 @@
 const ObraPublica = () => (
-  <div style={{backgroundColor: 'white', height: '100%', width: '100%', padding: '60px 40px', boxSizing: 'border-box'}}>
-    <p style={{color: 'black'}}>Producto</p>
+  <div className="inside-page">
+    <h1 className="header">Producto</h1>
+    <h2 className="sub-header">Descripcion del trabajo realizado, vision y mision del desarrollo de trabajos. Herramientas e innovacion en el trabajo.</h2>
   </div>
 )
 

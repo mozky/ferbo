@@ -52,7 +52,7 @@ const Layout = ({ props, children }) => {
 
   return (
     <div className={`container ${routeSite ? 'inside_page' : ''}`}>
-      <div id="loading" className={`${routeSite ? 'inside_page ': ' '} ${showLoading ? '' : 'hide'}`}><div id="top-half"></div><span>"Los detalles no son los detalles. Los detalles son el diseno" Charles Eames</span><div id="bottom-half"></div></div>
+      <div id="loading" className={`${routeSite ? 'inside_page ': ' '} ${showLoading ? '' : 'hide'}`}><div id="top-half"></div><span>"Los detalles no son los detalles. Los detalles son el diseño" Charles Eames</span><div id="bottom-half"></div></div>
       <main>{children}</main>
       {layout.col1 && <div id="col1">{layout.col1}</div>}
       {layout.col2 && <div id="col2">{layout.col2}</div>}

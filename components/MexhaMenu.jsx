@@ -8,7 +8,7 @@ const MexhaMenu = ({ showMenu }) => (
     <ul>
       <li>
         <MenuLink href="/mexha/inmobiliaria">
-          Inmobilaria
+          Inmobiliaria
         </MenuLink>
       </li>
       <li>

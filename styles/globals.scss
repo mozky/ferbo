@@ -207,11 +207,20 @@ main {
       text-transform: uppercase;
       border-bottom: 3px solid white;
       cursor: pointer;
-      transition: letter-spacing 0.5s, border-bottom-color 0.5s;
+      transition: all 1s;
+      line-height: 1.7em;
+      a {
+        transition: all 1s;
+      }
 
-      &:hover {
+      &:hover, .active {
         border-bottom-color: $color-orange;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
+        font-weight: 400;
+
+        a {
+          transform: scale(1.3);
+        }
       }
     }
   }

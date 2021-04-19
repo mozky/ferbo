@@ -266,6 +266,37 @@ main {
     padding-left: 25px;
   }
 
+  #phrase {
+    margin: 0;
+    padding: 0;
+    color: $color-dark-grey;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #phrase::before {
+      /* This will create the layer
+        over original text*/
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      /* Setting different color than
+        that of original text  */
+      color: $color-white;
+      overflow: hidden;
+
+      /* Setting width as 0*/
+      width: 0%;
+      transition: 2.5s;
+  }
+
+  #phrase.colorize::before {
+      /* Setting width to 100 on hover*/
+      width: 100%;
+  }
+
   &.hide {
     #top-half {
       animation-name: slide-top;

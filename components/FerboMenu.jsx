@@ -13,7 +13,7 @@ const FerboMenu = ({ showMenu }) => (
       </li>
       <li>
         <MenuLink href="/ferbo/carpinteria">
-          Carpinteria
+          Carpintería
         </MenuLink>
       </li>
       <li>

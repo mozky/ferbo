@@ -76,7 +76,7 @@ main {
   grid-area: 1 / 6;
 }
 
-#col1 {
+#col1, #col2, #col3 {
   position: relative;
   border-right: thin solid gray;
   &::after {
@@ -96,33 +96,6 @@ main {
       width: 0% !important; 
     }
   }
-}
-
-#col2 {
-  border-right: thin solid gray;
-  position: relative;
-  &::after {
-    content: ''; 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color:  $color-black;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    transition: width ease 1s;
-  }
-
-  &.visible {
-    &::after {
-      width: 0% !important; 
-    }
-  }
-}
-
-#col3 {
-  border-right: thin solid gray;
-  background: black;
 }
 
 #col4 {
@@ -405,13 +378,15 @@ main {
         padding-right: 7px;
       }
 
+      a:hover {
+        svg, g {
+          fill: $color-light-grey;
+        }
+      }
+
       svg, g {
         cursor: pointer;
         fill: $color-grey;
-
-        &:hover {
-        fill: $color-light-grey;
-        }
       }
     }
   }

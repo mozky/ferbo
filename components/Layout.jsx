@@ -15,9 +15,11 @@ const Layout = ({ props, children }) => {
     setTimeout(() => {
       const col1 = document.getElementById("col1")
       const col2 = document.getElementById("col2")
+      const col3 = document.getElementById("col3")
     
       col1 && col1.classList.add("visible")
       col2 && col2.classList.add("visible")
+      col3 && col3.classList.add("visible")
     }, 4000)
 
     setTimeout(() => {

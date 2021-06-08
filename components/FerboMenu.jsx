@@ -8,7 +8,7 @@ const FerboMenu = ({ showMenu }) => (
     <ul>
       <li>
         <MenuLink href="/ferbo/obra-publica">
-          Obra Publica
+          Obra Pública
         </MenuLink>
       </li>
       <li>

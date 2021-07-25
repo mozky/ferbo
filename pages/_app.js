@@ -1,5 +1,6 @@
 import 'normalize.css'
 import '@styles/globals.scss'
+import '@styles/animations.scss'
 
 import Head from 'next/head'
 

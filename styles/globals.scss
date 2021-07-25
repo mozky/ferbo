@@ -56,7 +56,8 @@ button {
       display: none;
     }
     main {
-      grid-area: 1/ 1 / 3 / 6
+      grid-area: 1/ 1 / 3 / 6;
+      position: relative;
     }
     #col5 {
       grid-area: 1 / 6

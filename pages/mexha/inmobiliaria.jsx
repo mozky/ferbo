@@ -1,3 +1,5 @@
+import withTransition from "@components/hoc/withTransition"
+
 const Inmobiliaria = () => (
   <div className="inside-page">
     <h1 className="header">Inmobiliaria</h1>
@@ -5,4 +7,4 @@ const Inmobiliaria = () => (
   </div>
 )
 
-export default Inmobiliaria
+export default withTransition(Inmobiliaria)

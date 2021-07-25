@@ -1,3 +1,5 @@
+import withTransition from "@components/hoc/withTransition"
+
 const Residencial = () => (
   <div className="inside-page">
     <h1 className="header">Residencial</h1>
@@ -5,4 +7,4 @@ const Residencial = () => (
   </div>
 )
 
-export default Residencial
+export default withTransition(Residencial)

@@ -1,3 +1,5 @@
+import withTransition from "@components/hoc/withTransition"
+
 const ObraPublica = () => (
   <div className="inside-page">
     <h1 className="header">Palabras clave sobre el campo de trabajo</h1>
@@ -5,4 +7,4 @@ const ObraPublica = () => (
   </div>
 )
 
-export default ObraPublica
+export default withTransition(ObraPublica)

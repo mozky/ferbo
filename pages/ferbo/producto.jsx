@@ -7,4 +7,4 @@ const Producto = () => (
   </div>
 )
 
-export default withTransition(Producto)
+export default withTransition(Producto, 'producto')

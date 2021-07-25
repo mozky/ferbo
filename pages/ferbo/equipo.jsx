@@ -7,4 +7,4 @@ const Equipo = () => (
   </div>
 )
 
-export default withTransition(Equipo)
+export default withTransition(Equipo, 'equipo')

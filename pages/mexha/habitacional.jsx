@@ -7,4 +7,4 @@ const Habitacional = () => (
   </div>
 )
 
-export default withTransition(Habitacional)
+export default withTransition(Habitacional, 'habitacional')

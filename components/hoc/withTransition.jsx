@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion"
 
 const withTransition = (Component, key) => {
-  console.log(key)
   return () => (
     <AnimatePresence>
       <motion.div

@@ -7,4 +7,4 @@ const ObraPublica = () => (
   </div>
 )
 
-export default withTransition(ObraPublica)
+export default withTransition(ObraPublica, 'obra-publica')

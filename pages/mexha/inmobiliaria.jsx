@@ -7,4 +7,4 @@ const Inmobiliaria = () => (
   </div>
 )
 
-export default withTransition(Inmobiliaria)
+export default withTransition(Inmobiliaria, 'inmobiliaria')

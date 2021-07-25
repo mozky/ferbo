@@ -7,4 +7,4 @@ const Carpinteria = () => (
   </>
 )
 
-export default withTransition(Carpinteria)
+export default withTransition(Carpinteria, 'carpinteria')

@@ -1,6 +1,6 @@
-import react, { useEffect } from "react"
+import { useEffect } from "react"
 import withTransition from "@components/hoc/withTransition"
-import dynamic from 'next/dynamic';
+
 
 const ObraPublica = () => {
   const macyOptions = {

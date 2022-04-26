@@ -12,7 +12,7 @@ const SocialIcons = () => (
         <BehanceIcon />
       </a>
       <a href="#">
-          <PinterestIcon />
+        <PinterestIcon />
       </a>
       <a href="#">
         <YouTubeIcon />

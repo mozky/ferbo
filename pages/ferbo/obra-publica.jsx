@@ -30,7 +30,7 @@ const ObraPublica = () => {
 
   const images = []
   for (let i = 1; i <= 37; i++) {
-    images.push(`/images/c1/00${i}_LR.jpg`)
+    images.push(`/images/c1/thumbnails/00${i}_LR.jpg`)
   }
 
   return (

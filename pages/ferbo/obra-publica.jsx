@@ -1,6 +1,9 @@
 import { useEffect } from "react"
 import withTransition from "@components/hoc/withTransition"
 
+const Image = ({ src }) => {
+  return <img style={{ maxWidth: 500 }} loading="lazy" src={src}></img>
+}
 
 const ObraPublica = () => {
   const macyOptions = {
@@ -33,16 +36,17 @@ const ObraPublica = () => {
       <div id="macy-grid"
         initial="hide"
         animate="show">
-          <img loading="lazy" src="/images/001_LR.jpg"></img>
-          <img loading="lazy" src="/images/002_LR.jpg"></img>
-          <img loading="lazy" src="/images/003_LR.jpg"></img>
-          <img loading="lazy" src="/images/004_LR.jpg"></img>
-          <img loading="lazy" src="/images/005_LR.jpg"></img>
-          <img loading="lazy" src="/images/006_LR.jpg"></img>
-          <img loading="lazy" src="/images/007_LR.jpg"></img>
-          <img loading="lazy" src="/images/008_LR.jpg"></img>
-          <img loading="lazy" src="/images/009_LR.jpg"></img>
-          <img loading="lazy" src="/images/0010_LR.jpg"></img>
+          <Image src="/images/001_LR.jpg"/>
+          <Image src="/images/001_LR.jpg"/>
+          <Image src="/images/002_LR.jpg"/>
+          <Image src="/images/003_LR.jpg"/>
+          <Image src="/images/004_LR.jpg"/>
+          <Image src="/images/005_LR.jpg"/>
+          <Image src="/images/006_LR.jpg"/>
+          <Image src="/images/007_LR.jpg"/>
+          <Image src="/images/008_LR.jpg"/>
+          <Image src="/images/009_LR.jpg"/>
+          <Image src="/images/0010_LR.jpg"/>
         </div>
     </div>
   )

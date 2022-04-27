@@ -8,7 +8,6 @@ const Image = ({ src }) => {
 const ObraPublica = () => {
   const macyOptions = {
     container: '#macy-grid',
-    trueOrder: true,
     mobileFirst: true,
     margin: 24,
     columns: 1,
@@ -29,25 +28,20 @@ const ObraPublica = () => {
     }
   }, [])
 
+  const images = []
+  for (let i = 1; i <= 37; i++) {
+    images.push(`/images/c1/00${i}_LR.jpg`)
+  }
+
   return (
     <div className="inside-page">
       <h1 className="header">Palabras clave sobre el campo de trabajo</h1>
       <h2 className="sub-header">Descripcion del trabajo realizado, vision y mision del desarrollo de trabajos. Herramientas e innovacion en el trabajo.</h2>
-      <div id="macy-grid"
-        initial="hide"
-        animate="show">
-          <Image src="/images/001_LR.jpg"/>
-          <Image src="/images/001_LR.jpg"/>
-          <Image src="/images/002_LR.jpg"/>
-          <Image src="/images/003_LR.jpg"/>
-          <Image src="/images/004_LR.jpg"/>
-          <Image src="/images/005_LR.jpg"/>
-          <Image src="/images/006_LR.jpg"/>
-          <Image src="/images/007_LR.jpg"/>
-          <Image src="/images/008_LR.jpg"/>
-          <Image src="/images/009_LR.jpg"/>
-          <Image src="/images/0010_LR.jpg"/>
-        </div>
+      <div id="macy-grid">
+        {images.map(img => {
+          return <Image src={img} />
+        })}
+      </div>
     </div>
   )
 }

@@ -5,7 +5,7 @@ const withTransition = (Component, key) => {
     <AnimatePresence>
       <motion.div
         key={`inside-page-${key}`}
-        className="inside-page slide-in"
+        className="slide-in"
         initial={{ top: '-100%' }}
         animate={{ top: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}

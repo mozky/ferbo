@@ -33,16 +33,16 @@ const ObraPublica = () => {
       <div id="macy-grid"
         initial="hide"
         animate="show">
-          <img src="/images/001_LR.jpg"></img>
-          <img src="/images/002_LR.jpg"></img>
-          <img src="/images/003_LR.jpg"></img>
-          <img src="/images/004_LR.jpg"></img>
-          <img src="/images/005_LR.jpg"></img>
-          <img src="/images/006_LR.jpg"></img>
-          <img src="/images/007_LR.jpg"></img>
-          <img src="/images/008_LR.jpg"></img>
-          <img src="/images/009_LR.jpg"></img>
-          <img src="/images/0010_LR.jpg"></img>
+          <img loading="lazy" src="/images/001_LR.jpg"></img>
+          <img loading="lazy" src="/images/002_LR.jpg"></img>
+          <img loading="lazy" src="/images/003_LR.jpg"></img>
+          <img loading="lazy" src="/images/004_LR.jpg"></img>
+          <img loading="lazy" src="/images/005_LR.jpg"></img>
+          <img loading="lazy" src="/images/006_LR.jpg"></img>
+          <img loading="lazy" src="/images/007_LR.jpg"></img>
+          <img loading="lazy" src="/images/008_LR.jpg"></img>
+          <img loading="lazy" src="/images/009_LR.jpg"></img>
+          <img loading="lazy" src="/images/0010_LR.jpg"></img>
         </div>
     </div>
   )
